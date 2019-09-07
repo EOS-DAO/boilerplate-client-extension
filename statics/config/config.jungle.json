@@ -1,20 +1,20 @@
 {
-    "dacName": "Example DAC",
-    "dacScope": "eos.dac",
+    "dacName": "EOS DAO",
+    "dacScope": "eosdao",
 
     "accounts":{
         "treasuryAccount":{
-            "name": "eosdacdoshhq"
+            "name": "oadtestingdn"
         },
         "authAccount": {
-            "name": "dacauthority"
+            "name": "oadtestingau"
         }
     },
 
     "contracts": {
         "token": {
-            "name": "kasdactokens",
-            "symbol": "KASDAC",
+            "name": "oadtestingtk",
+            "symbol": "DAC",
             "totalSupply": 1000000000.0000,
             "decimals": 4
         },
@@ -48,31 +48,11 @@
 
     "financial_page_graphs": [
         {
-          "account": "eosdacserval",
+          "account": "oadtestingdn",
           "contract": "eosio.token",
           "symbol": "EOS",
           "description":
-            "The EOS Mainnet block producer account for eosDAC which receives Block Producer rewards."
-        },
-        {
-          "account": "eosdacdoshhq",
-          "contract": "eosio.token",
-          "symbol": "EOS",
-          "description":
-            "The DAC owner account where DAC funds are secured and controlled by a 12-account multisig permission system of elected custodians."
-        },
-        {
-          "account": "dacocoiogmbh",
-          "contract": "eosio.token",
-          "symbol": "EOS",
-          "description":
-            "The current eosDAC service provider account which manages payroll, employment contracts, and real-world interactions on behalf of the DAC."
-        },
-        {
-          "account": "dacelections",
-          "contract": "kasdactokens",
-          "symbol": "KASDAC",
-          "description": "custodian contract description"
+            "The donations account where donated EOS are exchanged for EDAO tokens."
         }
       ],
 
@@ -85,7 +65,7 @@
     },
 
     "external":{
-        "homepage": "https://eosdac.io",
+        "homepage": "https://eosdao.io",
         "explorer": "https://jungle.bloks.io"
     }
 }
